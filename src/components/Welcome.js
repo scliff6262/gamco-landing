@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import { Carousel } from 'react-bootstrap'
+import {Jumbotron, Carousel } from 'react-bootstrap'
 
 const Welcome = () => {
   return(
-    <div style={{padding: "0px 20px"}}>
-      <h2>Welcome</h2>
+    <Jumbotron style={{padding: "20px 20px"}}>
+
       <Carousel>
         <Carousel.Item>
           <img width={900} height={500} alt="900x500" src="https://www.gabelli.com/corporate/timeline/about_1976.jpg" />
@@ -25,7 +25,7 @@ const Welcome = () => {
       investment process and a commitment to generating superior risk-adjusted returns.
       </p>
 
-    </div>
+    </Jumbotron>
   )
 }
 

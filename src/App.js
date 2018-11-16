@@ -4,6 +4,7 @@ import Welcome from './components/Welcome'
 import Toolbar from './components/Toolbar'
 import News from './containers/News'
 import PressReleases from './containers/PressReleases'
+import ContactUs from './components/ContactUs'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
               <Route exact path="/" component={Welcome}/>
               <Route exact path="/media/news" component={News} />
               <Route exact path="/media/releases" component={PressReleases} />
+              <Route exact path="/contact" component={ContactUs}/>
             </Switch>
           </div>
         </Router>

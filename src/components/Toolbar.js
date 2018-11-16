@@ -13,7 +13,7 @@ const Toolbar = (props) => {
         </Navbar.Brand>
       </Navbar.Header>
       <Nav pullRight>
-        <NavDropdown eventKey={3} title="Media Center" id="basic-nav-dropdown">
+        <NavDropdown eventKey={3} title="Media" id="basic-nav-dropdown">
           <MenuItem eventKey={3.1} >
           <Link to="/media/news">In the News</Link>
           </MenuItem>
@@ -22,7 +22,7 @@ const Toolbar = (props) => {
           </MenuItem>
         </NavDropdown>
         <NavItem eventKey={1} href="#">
-          Contact Us
+          <Link to="/contact">Contact Us</Link>
         </NavItem>
 
 
