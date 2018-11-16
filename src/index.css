@@ -16,3 +16,7 @@ code {
 .navbar-brand {
   padding: 5px
 }
+
+#basic-nav-dropdown {
+  color: rgb(64, 124, 181)
+}
