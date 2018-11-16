@@ -31,7 +31,7 @@ class News extends Component {
   render(){
     return(
       <div>
-        <h1 style={{marginLeft: "15px"}}>NewsFeed</h1>
+        <h1 style={{marginLeft: "15px", "font-family": "Helvetica"}}>NewsFeed</h1>
         <BarLoader
           className={override}
           sizeUnit={"px"}

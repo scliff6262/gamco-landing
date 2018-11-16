@@ -21,11 +21,8 @@ const Toolbar = (props) => {
             <Link to="/media/releases">Press Releases</Link>
           </MenuItem>
         </NavDropdown>
-        <NavItem eventKey={2} href="https://www.gabelli.com/Template/corporate/index.cfm">
-          Investor Relations
-        </NavItem>
-        <NavItem eventKey={1} href="https://www.gabelli.com/corporate/about_us.cfm">
-          About Us
+        <NavItem eventKey={1} href="#">
+          Contact Us
         </NavItem>
 
 
