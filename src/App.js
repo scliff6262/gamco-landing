@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Toolbar from './components/Toolbar'
 import News from './containers/News'
+import PressReleases from './containers/PressReleases'
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" render={ () => <h1>Welcome</h1>}/>
               <Route exact path="/media/news" component={News} />
-              <Route exact path="/media/releases" render={ () => <div><h1>Press Releases</h1></div>} />
+              <Route exact path="/media/releases" component={PressReleases} />
             </Switch>
           </div>
         </Router>

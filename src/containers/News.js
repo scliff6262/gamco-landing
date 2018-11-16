@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { PageHeader, ListGroup, ListGroupItem } from 'react-bootstrap'
+import NewsItem from '../components/NewsItem'
+import { ListGroup } from 'react-bootstrap'
 import { css } from 'react-emotion';
 import { BarLoader } from 'react-spinners';
 
@@ -18,7 +19,7 @@ class News extends Component {
       articles: []
     }
 
-    fetch("https://newsapi.org/v2/everything?q=+gabelli&language=en&apiKey=864e7e6732e043e3a23f183e3829d1c3")
+    fetch("https://newsapi.org/v2/everything?q='gabelli'&sortBy=publishedAt&language=en&excludeDomains=spoilertv.com&apiKey=864e7e6732e043e3a23f183e3829d1c3")
     .then( r => r.json() )
     .then( json => setTimeout( () => {
       this.setState({ articles: json.articles })
@@ -39,7 +40,7 @@ class News extends Component {
           loading={this.state.loading}
         />
         <ListGroup>
-        {this.state.articles && this.state.articles.map( (article) => <ListGroupItem>{article.title}</ListGroupItem> )}
+          {this.state.articles && this.state.articles.map( (article) => <NewsItem article={article} /> )}
         </ListGroup>
       </div>
     )
