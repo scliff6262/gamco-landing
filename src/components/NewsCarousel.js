@@ -12,7 +12,7 @@ const carouselCaption = css`
 
 const NewsCarousel = () => {
   return(
-    <Carousel style={{minHeight: "475px"}}>
+    <Carousel style={{minHeight: "490px"}}>
       <Carousel.Item>
         <a target="_blank" rel="noopener noreferrer" href="https://www.cnbc.com/video/2018/11/08/final-trades-amazon-tesla-albemarle-walmart.html">
           <img width={900} height={500} alt="900x500" style={{margin: "0 auto"}} src={Mario} />
