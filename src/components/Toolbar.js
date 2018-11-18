@@ -19,10 +19,10 @@ const Toolbar = (props) => {
       <Nav pullRight>
         <NavDropdown eventKey={3} title="Media" id="basic-nav-dropdown">
           <MenuItem eventKey={3.1} name="news" onClick={handleClick}>
-            <Link to="/media/news" >In the News</Link>
+            <Link to="/media/news" name="news">In the News</Link>
           </MenuItem>
           <MenuItem eventKey={3.2} name="releases" onClick={handleClick}>
-            <Link to="/media/releases">Press Releases</Link>
+            <Link to="/media/releases" name="releases">Press Releases</Link>
           </MenuItem>
         </NavDropdown>
         <NavItem eventKey={1} href="#">
