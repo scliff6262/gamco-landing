@@ -7,11 +7,12 @@ import PressReleases from './containers/PressReleases'
 import ContactUs from './components/ContactUs'
 
 class App extends Component {
+
   render() {
     return (
         <Router>
           <div className="App">
-            <Toolbar/>
+            <Toolbar history={this.props.history}/>
             <Switch>
               <Route exact path="/" component={Welcome}/>
               <Route exact path="/media/news" component={News} />

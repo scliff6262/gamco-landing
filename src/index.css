@@ -20,3 +20,7 @@ code {
 #basic-nav-dropdown {
   color: rgb(64, 124, 181)
 }
+
+nav.navbar.navbar-default {
+  margin-bottom: 0px
+}

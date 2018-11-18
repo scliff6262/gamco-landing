@@ -1,9 +1,13 @@
 import React from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, withRouter } from 'react-router-dom'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 
 
 const Toolbar = (props) => {
+
+  const handleClick = (e) => {
+    e.target.name === "news" ? props.history.push("/media/news") : props.history.push("/media/releases")
+  }
 
   return (
     <Navbar>
@@ -14,21 +18,19 @@ const Toolbar = (props) => {
       </Navbar.Header>
       <Nav pullRight>
         <NavDropdown eventKey={3} title="Media" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1} >
-          <Link to="/media/news">In the News</Link>
+          <MenuItem eventKey={3.1} name="news" onClick={handleClick}>
+            <Link to="/media/news" >In the News</Link>
           </MenuItem>
-          <MenuItem eventKey={3.2}>
+          <MenuItem eventKey={3.2} name="releases" onClick={handleClick}>
             <Link to="/media/releases">Press Releases</Link>
           </MenuItem>
         </NavDropdown>
         <NavItem eventKey={1} href="#">
           <Link to="/contact">Contact Us</Link>
         </NavItem>
-
-
       </Nav>
     </Navbar>
   )
 }
 
-export default Toolbar
+export default withRouter(Toolbar)
