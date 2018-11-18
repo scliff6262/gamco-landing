@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NewsItem from '../components/NewsItem'
 import NewsCarousel from '../components/NewsCarousel'
-import { Jumbotron, ListGroup } from 'react-bootstrap'
+import { ListGroup } from 'react-bootstrap'
 import { css } from 'react-emotion';
 import { BarLoader } from 'react-spinners';
 

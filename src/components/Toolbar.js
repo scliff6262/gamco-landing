@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Link, withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 
 
@@ -13,7 +13,7 @@ const Toolbar = (props) => {
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand id="gamco-brand" bsStyle={{paddingTop: "7px"}}>
-          <Link to="/"><img style={{height: "41px"}} src="http://www.1290funds.com/images/logo-gamco-2.jpg" /></Link>
+          <Link to="/"><img style={{height: "41px"}} src="http://www.1290funds.com/images/logo-gamco-2.jpg" alt="GAMCO Logo"/></Link>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav pullRight>
